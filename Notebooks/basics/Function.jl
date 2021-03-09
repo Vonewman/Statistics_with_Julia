@@ -15,5 +15,6 @@ function showdebugprintln(testvar)
     println("The type of testvar is $(typeof(testvar)) and the value of testvar is $testvar")
     #                  and this line reports what value, and hence what type, testvar actually has here
 end
+
 a = ['1',2.]
 println(showdebugprintln(a))

@@ -64,7 +64,7 @@ If you would like to learn how to create .csv files from tables on the web, plea
 md"""
 ### Loading the DelimitedFiles package
 
-Here is a special Julia moment: our first time to load a package explicitly. 
+Here is a special Julia moment: our first time to load a package explicitly.
 
 As noted in an earlier lecture, Julia consists of some basics that are always loaded, plus extensions that can be additionally loaded. One of these is the DelimitedFiles package, which is part of the standard library, but in order to use it, you have to load it. To do so is very simple: you just enter ``using DelimitedFiles``. We need it to read the .csv file of EVD data.
 
@@ -88,11 +88,11 @@ Now we can start using Julia again. In a new notebook for you Week 2 Julia code,
 
 # ╔═╡ d7b84cfe-7b84-11eb-1c66-2b85b2156ae1
 md"""
-The ``readdlm()`` function is Julia's way to read any file that consists of lines separated into data items with a delimiter of some sort. In fact, the very word "readdlm" is an abbreviation of "read-with-a-delimiter". 
+The ``readdlm()`` function is Julia's way to read any file that consists of lines separated into data items with a delimiter of some sort. In fact, the very word "readdlm" is an abbreviation of "read-with-a-delimiter".
 
 Notice five things
 - We loaded the DelimitedFiles package with ``using DelimitedFiles``.
-- In order to use ``readdlm()``, we have to say that it sits in the DelimitedFiles package, using the dot syntax ``DelimitedFiles.readdlm()``. This use$^1$ of dot syntax for referencing an object that sits inside another object is also used in languages like C++ and Java. 
+- In order to use ``readdlm()``, we have to say that it sits in the DelimitedFiles package, using the dot syntax ``DelimitedFiles.readdlm()``. This use$^1$ of dot syntax for referencing an object that sits inside another object is also used in languages like C++ and Java.
 - We have used a variable to contain the data from the file (you could change the name, though, if you like)
 - The file name is given as a string, using double quotes
 - The delimeter is given as a character, using single quotes
