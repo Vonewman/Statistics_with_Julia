@@ -10,8 +10,7 @@ numMatch(loginPassword) =
     sum([loginPassword[i] == correctPassword[i] for i in 1:passLength])
 
 N = 10^7
-
-passwords = [String(rand(possibleChars, passLength)) for _ in 1:N]
+passwords = [String(rand(possibleChars,passLength)) for _ in 1:N]
 numLogs = sum([numMatch(p) >= numMatchesForLog for p in passwords])
-println("Number of login attemps logged: ", numLogs)
-println("Proportion of login attemps logged: ", numLogs/N)
+println("Number of login attempts logged: ", numLogs)
+println("Proportion of login attempts logged: ", numLogs/N)

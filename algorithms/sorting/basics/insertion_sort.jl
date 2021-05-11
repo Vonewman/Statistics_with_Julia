@@ -3,7 +3,8 @@
 # best case : n
 
 function insertion_sort!(A)
-    for j in 2:length(A)
+    n = length(A)
+    for j in 2:n
         key = A[j]
         i = j - 1
         while i > 0 && A[i] > key
